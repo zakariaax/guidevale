@@ -18,7 +18,10 @@ export function abs(path: string) {
 }
 
 export function associateState() {
-  const raw = process.env.AMAZON_ASSOCIATE_TAG?.trim() ?? "";
+  const raw = (process.env.AMAZON_ASSOCIATE_TAG?.trim() ?? "").replace(
+    /-20v$/i,
+    "-20",
+  );
   const safe = /^[A-Za-z0-9][A-Za-z0-9-]{1,30}$/.test(raw);
   if (!safe || raw === PLACEHOLDER_TAG) {
     return { tag: PLACEHOLDER_TAG, placeholder: true };
