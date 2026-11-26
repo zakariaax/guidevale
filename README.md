@@ -36,6 +36,20 @@ Eighteen products and six guides, written as notes rather than as a price board:
 - Home tech: Echo Dot (5th Gen), Blink Outdoor 4, eufy Video Doorbell E340
 - Care: SURI toothbrush, CHI 1-inch iron, Waterpik Aquarius
 
+## Product images
+
+Each product shows a generated, unbranded studio picture of its product type, with a caption saying it is an illustration and not the exact model. Amazon's own listing photos cannot be copied onto the site under the Associates agreement; once the account qualifies for the Creators API, its image URLs can replace these.
+
+Sources live in `images/products/<slug>.jpg`. After adding or replacing one, run:
+
+```bash
+npm run images
+```
+
+That writes AVIF and WebP files at 160, 320 and 640 pixels to `public/img/products/`, with a content hash in each name, and regenerates `src/data/product-images.generated.ts`. Cloudflare serves `/img/*` straight from its asset layer with a one-year cache, so image requests never run the Worker. Add a short description of the new picture to `src/data/product-images.ts` for screen readers.
+
+## Adding products
+
 Add a product by appending to the matching file in `src/data/products/` and linking it from `related`. Add a guide in `src/data/guides.ts`. Pages, the sitemap, and the internal links are generated from that data.
 
 ## Search, for real

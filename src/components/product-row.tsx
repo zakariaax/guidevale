@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ProductPlate } from "@/components/product-plate";
+import { ProductImage } from "@/components/product-image";
 import { TierMark } from "@/components/tier-mark";
 import type { Product } from "@/data/types";
 
@@ -17,7 +17,13 @@ export function ProductRow({
         className="group flex items-center gap-3 py-4 sm:gap-4"
       >
         <TierMark tier={product.tier} desk={desk} />
-        <ProductPlate id={product.plate} className="size-16 rounded-2xl sm:size-[4.5rem]" />
+        <ProductImage
+          slug={product.slug}
+          plate={product.plate}
+          sizes="72px"
+          decorative
+          className="size-16 shrink-0 rounded-2xl sm:size-[4.5rem]"
+        />
         <span className="min-w-0 flex-1">
           <span className="block truncate font-medium group-hover:underline">
             {product.name}

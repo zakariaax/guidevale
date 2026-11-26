@@ -1,0 +1,7 @@
+# vinext stops generating this file once public/_headers exists, so its rule is kept here.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# File names under /img carry a content hash (scripts/build-images.mjs), so they never change in place.
+/img/*
+  Cache-Control: public, max-age=31536000, immutable

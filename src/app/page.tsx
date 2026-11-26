@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { AmazonButton } from "@/components/amazon-button";
 import { JsonLd } from "@/components/json-ld";
-import { ProductPlate } from "@/components/product-plate";
+import { ProductImage } from "@/components/product-image";
 import { ProductRow } from "@/components/product-row";
 import { buttonVariants } from "@/components/ui/button";
 import { categories } from "@/data/categories";
+import { categoryImageProduct } from "@/data/product-images";
 import { guides } from "@/data/guides";
 import { heroProduct, spotlightProducts } from "@/lib/catalog";
 import { abs, formatDeskDate } from "@/lib/site";
@@ -46,7 +47,13 @@ export default function HomePage() {
           <p className="text-sm">Worth opening · {hero.brand}</p>
         </div>
         <div className="grid gap-6 p-5 sm:grid-cols-[15rem_1fr] sm:items-center sm:p-8">
-          <ProductPlate id={hero.plate} className="mx-auto w-full max-w-[15rem]" />
+          <ProductImage
+            slug={hero.slug}
+            plate={hero.plate}
+            sizes="240px"
+            priority
+            className="mx-auto w-full max-w-[15rem]"
+          />
           <div>
             <p className="text-sm text-muted-foreground">{hero.brand}</p>
             <h2 className="font-heading mt-1 text-4xl tracking-tight sm:text-5xl">
@@ -98,7 +105,13 @@ export default function HomePage() {
                 href={`/categories/${category.slug}`}
                 className="flex h-full gap-4 rounded-3xl border border-border bg-card p-4 transition hover:-translate-y-0.5 hover:border-signal/40"
               >
-                <ProductPlate id={category.plate} className="size-16 rounded-2xl" />
+                <ProductImage
+                  slug={categoryImageProduct[category.slug] ?? ""}
+                  plate={category.plate}
+                  sizes="64px"
+                  decorative
+                  className="size-16 shrink-0 rounded-2xl"
+                />
                 <span>
                   <span className="block text-xs font-semibold tracking-[0.16em] text-signal">
                     {category.kicker.toUpperCase()}

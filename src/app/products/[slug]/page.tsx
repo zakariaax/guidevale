@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { AmazonButton } from "@/components/amazon-button";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
-import { ProductPlate } from "@/components/product-plate";
+import { ProductImage } from "@/components/product-image";
 import { ProductRow } from "@/components/product-row";
 import { RichText } from "@/components/rich-text";
 import { products } from "@/data/products";
@@ -93,7 +93,18 @@ export default async function ProductPage({ params }: Props) {
         </Link>
       </p>
       <div className="mt-6 grid gap-8 lg:grid-cols-[18rem_1fr] lg:items-start">
-        <ProductPlate id={product.plate} className="mx-auto w-full max-w-[18rem]" />
+        <figure className="mx-auto w-full max-w-[18rem]">
+          <ProductImage
+            slug={product.slug}
+            plate={product.plate}
+            sizes="288px"
+            priority
+          />
+          <figcaption className="mt-2 text-xs leading-5 text-muted-foreground">
+            Illustration of this kind of product, not a photo of the{" "}
+            {product.name}. The Amazon listing has photos of the exact model.
+          </figcaption>
+        </figure>
         <div>
           <p className="text-xs font-semibold tracking-[0.18em] text-signal">
             {product.brand.toUpperCase()} · NOTE UPDATED{" "}
