@@ -67,7 +67,7 @@ This repo is the engine for that, on purpose:
 
 What you still do, in order:
 
-1. Apply for Amazon Associates with this site once it is public. The required sentence, "As an Amazon Associate I earn from qualifying purchases.", is in the header and on `/disclosure`.
+1. Apply for Amazon Associates with this site once it is public. The required sentence, "As an Amazon Associate I earn from qualifying purchases.", is in the footer of every page and on `/disclosure`. Keep it there: the Associates agreement requires it, and the "Paid link" notes beside each Amazon button cover the FTC's rule that the disclosure sit near the link.
 2. Put your tag in `AMAZON_ASSOCIATE_TAG` and the public origin in `SITE_URL`, then republish.
 3. Add the property in Google Search Console and watch queries, not just clicks. Pages with impressions and a weak click-through rate need a clearer title, not another hundred thin URLs.
 4. Publish a new guide when you can say something a product page does not. Update a note when the model year changes. Delete a page that you can no longer defend.

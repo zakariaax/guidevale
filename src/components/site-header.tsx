@@ -2,7 +2,7 @@ import Link from "next/link";
 import { categories } from "@/data/categories";
 import { MobileNav } from "@/components/mobile-nav";
 import { Input } from "@/components/ui/input";
-import { associateDisclosure, associateState } from "@/lib/site";
+import { associateState } from "@/lib/site";
 
 const links = [
   { href: "/desk", label: "The desk" },
@@ -72,9 +72,6 @@ export function SiteHeader() {
           </nav>
         </div>
       </div>
-      <p className="bg-signal px-4 py-2 text-center text-sm font-medium text-white">
-        {associateDisclosure}
-      </p>
       {placeholder ? (
         <p className="border-b border-border bg-[#fff4e8] px-4 py-2 text-center text-sm text-ink">
           Amazon links on this copy use a placeholder Associates tag, so they

@@ -12,11 +12,6 @@ export function SiteFooter() {
             A short list of products people keep buying, and the reason each
             one earns a click. Today&apos;s price stays on Amazon.
           </p>
-          <p className="mt-4 max-w-sm rounded-2xl border border-border bg-card p-4 text-sm leading-6">
-            {associateDisclosure} Guidevale is not endorsed or sponsored by
-            Amazon. Amazon and the Amazon logo are trademarks of Amazon.com,
-            Inc. or its affiliates.
-          </p>
         </div>
         <div>
           <p className="text-xs font-semibold tracking-[0.16em] text-muted-foreground">
@@ -72,6 +67,12 @@ export function SiteFooter() {
             </li>
           </ul>
         </div>
+      </div>
+      {/* The Associates Operating Agreement requires this exact sentence on the site. */}
+      <div className="border-t border-border">
+        <p className="mx-auto max-w-5xl px-4 py-4 text-xs leading-5 text-muted-foreground sm:px-6">
+          {associateDisclosure}
+        </p>
       </div>
     </footer>
   );
