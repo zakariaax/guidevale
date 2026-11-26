@@ -3,12 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AmazonButton } from "@/components/amazon-button";
 import { FaqList } from "@/components/faq-list";
+import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
 import { ProductImage } from "@/components/product-image";
 import { ProductRow } from "@/components/product-row";
 import { RichText } from "@/components/rich-text";
 import { products } from "@/data/products";
-import { getCategory, getProduct, relatedProducts } from "@/lib/catalog";
+import { getCategory, getProduct, guideForCategory, relatedProducts } from "@/lib/catalog";
 import { abs, formatDeskDate, siteOrigin } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -40,6 +41,7 @@ export default async function ProductPage({ params }: Props) {
   if (!product) notFound();
   const category = getCategory(product.category);
   const related = relatedProducts(product.related);
+  const guide = guideForCategory(product.category);
 
   return (
     <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
@@ -176,6 +178,15 @@ export default async function ProductPage({ params }: Props) {
         <h2 className="font-heading text-3xl tracking-tight">Questions</h2>
         <FaqList faqs={product.faqs} />
       </section>
+
+      {guide ? (
+        <section className="mt-10 max-w-2xl">
+          <h2 className="text-xs font-semibold tracking-[0.16em] text-muted-foreground">
+            READ BEFORE YOU BUY
+          </h2>
+          <GuideCard guide={guide} layout="row" className="mt-3" />
+        </section>
+      ) : null}
 
       <section className="mt-10 max-w-2xl rounded-3xl border border-border bg-card p-5">
         <h2 className="font-heading text-2xl">Where this note comes from</h2>

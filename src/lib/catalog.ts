@@ -27,6 +27,25 @@ export function spotlightProducts() {
   return products.filter((product) => product.spotlight);
 }
 
+/** Hero first, then the spotlight list, then everything else, in catalog order. */
+export function deskOrder() {
+  const rank = (product: Product) => (product.hero ? 0 : product.spotlight ? 1 : 2);
+  return [...products].sort((a, b) => rank(a) - rank(b));
+}
+
+const categoryGuide: Record<string, string> = {
+  air: "air-purifier-room-size",
+  floors: "apartment-robot-vacuum",
+  kitchen: "kitchen-counter-space",
+  sound: "headphones-you-keep",
+  home: "smart-home-subscriptions",
+  care: "read-a-discount",
+};
+
+export function guideForCategory(category: string) {
+  return getGuide(categoryGuide[category] ?? "read-a-discount");
+}
+
 export function relatedProducts(slugs: string[]) {
   return slugs
     .map((slug) => getProduct(slug))

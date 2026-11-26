@@ -38,6 +38,10 @@ export const productImageFiles: Record<string, { base: string; color: string }> 
     "base": "/img/products/eufy-omni-c28-26157a0a",
     "color": "#f8e8d8"
   },
+  "guide-read-a-discount": {
+    "base": "/img/products/guide-read-a-discount-8e3e9970",
+    "color": "#e8e8d8"
+  },
   "kitchenaid-artisan": {
     "base": "/img/products/kitchenaid-artisan-d2e024d2",
     "color": "#f8e8d8"

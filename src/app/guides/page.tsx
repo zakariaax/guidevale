@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { GuideCard } from "@/components/guide-card";
 import { guides } from "@/data/guides";
 import { formatDeskDate, siteOrigin } from "@/lib/site";
 
@@ -23,16 +23,13 @@ export default function GuidesPage() {
         The guides are the part a deal badge skips: room size, fit, counter
         space, and the second price.
       </p>
-      <ul className="mt-8 divide-y divide-border border-y border-border">
+      <p className="mt-2 text-sm text-muted-foreground">
+        Updated {formatDeskDate(guides[0].updated)}.
+      </p>
+      <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {guides.map((guide) => (
           <li key={guide.slug}>
-            <Link href={`/guides/${guide.slug}`} className="block py-6 hover:bg-white/40">
-              <p className="text-xs font-semibold tracking-[0.16em] text-muted-foreground">
-                {guide.minutes} MIN · UPDATED {formatDeskDate(guide.updated).toUpperCase()}
-              </p>
-              <h2 className="font-heading mt-2 text-3xl tracking-tight">{guide.title}</h2>
-              <p className="mt-2 max-w-2xl text-muted-foreground">{guide.dek}</p>
-            </Link>
+            <GuideCard guide={guide} />
           </li>
         ))}
       </ul>

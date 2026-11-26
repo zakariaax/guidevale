@@ -20,6 +20,16 @@ export const productImageSubjects: Record<string, string> = {
   "waterpik-aquarius": "a white countertop water flosser",
 };
 
+/** The picture on each guide card: a product it covers, or its own image in images/products. */
+export const guideImage: Record<string, string> = {
+  "read-a-discount": "guide-read-a-discount",
+  "air-purifier-room-size": "coway-mighty-ap-1512hh",
+  "apartment-robot-vacuum": "eufy-omni-c28",
+  "headphones-you-keep": "bose-quietcomfort",
+  "kitchen-counter-space": "ninja-air-fryer-pro",
+  "smart-home-subscriptions": "blink-outdoor-4",
+};
+
 /** The product whose illustration stands in for each shelf. */
 export const categoryImageProduct: Record<string, string> = {
   air: "winix-5530",
