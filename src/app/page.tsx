@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { AmazonButton } from "@/components/amazon-button";
 import { DealCard, tierLabel } from "@/components/deal-card";
@@ -12,7 +13,11 @@ import { categoryImageProduct } from "@/data/product-images";
 import { products } from "@/data/products";
 import type { Product } from "@/data/types";
 import { deskOrder, getGuide, heroProduct, productsIn } from "@/lib/catalog";
-import { abs, formatDeskDate } from "@/lib/site";
+import { abs, formatDeskDate, siteOrigin } from "@/lib/site";
+
+export const metadata: Metadata = {
+  alternates: siteOrigin() ? { canonical: "/" } : undefined,
+};
 
 const tabs: (FeedTab & { test: (p: Product) => boolean })[] = [
   { id: "popular", label: "Most bought", match: "[data-popular]", test: (p) => p.hero || p.spotlight },
