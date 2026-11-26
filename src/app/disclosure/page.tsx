@@ -4,7 +4,7 @@ import { associateDisclosure, siteOrigin } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Affiliate disclosure",
   description:
-    "Northline earns from qualifying Amazon purchases. Amazon does not endorse this site. Prices are shown on Amazon.",
+    "Guidevale earns from qualifying Amazon purchases. Amazon does not endorse this site. Prices are shown on Amazon.",
   alternates: siteOrigin() ? { canonical: "/disclosure" } : undefined,
 };
 
@@ -19,7 +19,7 @@ export default function DisclosurePage() {
       </h1>
       <div className="mt-6 space-y-5 text-[1.05rem] leading-8">
         <p>
-          Northline is a participant in the Amazon Services LLC Associates
+          Guidevale is a participant in the Amazon Services LLC Associates
           Program, an affiliate advertising program designed to provide a
           means for sites to earn advertising fees by advertising and linking
           to Amazon.com.
@@ -33,7 +33,7 @@ export default function DisclosurePage() {
         </p>
         <p>
           Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its
-          affiliates. Northline is not endorsed, sponsored, or approved by
+          affiliates. Guidevale is not endorsed, sponsored, or approved by
           Amazon, and nothing on this site should be read as Amazon&apos;s
           recommendation.
         </p>

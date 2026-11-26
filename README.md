@@ -1,8 +1,8 @@
-# Northline
+# Guidevale
 
-Northline is an editorial Amazon affiliate desk. The homepage opens with one product worth a click, then the rest of the shelf, then the shelves themselves: air, floors, kitchen, sound, home tech, and care. Every product page says who it is for, who should skip it, and what to confirm on the listing. Guides cover the decisions a discount badge skips, starting with how to read a discount at all.
+Guidevale is an editorial Amazon affiliate desk. The homepage opens with one product worth a click, then the rest of the shelf, then the shelves themselves: air, floors, kitchen, sound, home tech, and care. Every product page says who it is for, who should skip it, and what to confirm on the listing. Guides cover the decisions a discount badge skips, starting with how to read a discount at all.
 
-Amazon shows the price. Northline does not. Associates rules allow a price on a site like this only when it comes from Amazon's Product Advertising API or Creators API and stays current. Typed prices go stale and put an Associates account at risk. The button on every product is a paid link labeled as one: **See today's price on Amazon**.
+Amazon shows the price. Guidevale does not. Associates rules allow a price on a site like this only when it comes from Amazon's Product Advertising API or Creators API and stays current. Typed prices go stale and put an Associates account at risk. The button on every product is a paid link labeled as one: **See today's price on Amazon**.
 
 ## Run it locally
 

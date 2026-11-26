@@ -33,7 +33,7 @@ export const floorProducts: Product[] = [
     watchouts: [
       "Confirm on the current listing whether the dock empties the dust bin or only washes and dries the mop. Those are different chores, and the product family names move.",
       "Mop pads and the dock's cleaning solution are a running cost. Read what eufy says has to be theirs.",
-      "Northline did not live with this robot. The cleaning notes above are attributed to The Verge's November 20, 2026 review, not to a test in our hallway.",
+      "Guidevale did not live with this robot. The cleaning notes above are attributed to The Verge's November 20, 2026 review, not to a test in our hallway.",
     ],
     specs: [
       { label: "Job", value: "Robot vacuum and mop with a multifunction dock" },
@@ -54,7 +54,7 @@ export const floorProducts: Product[] = [
     ],
     related: ["shark-navigator-lift-away", "bissell-little-green"],
     sources:
-      "Sales position from public bestseller roundups as of November 22, 2026. Cleaning, navigation, dock, camera, and obstacle notes are summarized from The Verge's November 20, 2026 review of the Omni C28. Northline did not repeat that test.",
+      "Sales position from public bestseller roundups as of November 22, 2026. Cleaning, navigation, dock, camera, and obstacle notes are summarized from The Verge's November 20, 2026 review of the Omni C28. Guidevale did not repeat that test.",
   },
   {
     slug: "shark-navigator-lift-away",
@@ -108,7 +108,7 @@ export const floorProducts: Product[] = [
     ],
     related: ["eufy-omni-c28", "bissell-little-green"],
     sources:
-      "This note describes the Lift-Away design, which Shark has sold for years across several model numbers. Tool lists differ by model and should be confirmed on the listing. Northline did not lab-test suction.",
+      "This note describes the Lift-Away design, which Shark has sold for years across several model numbers. Tool lists differ by model and should be confirmed on the listing. Guidevale did not lab-test suction.",
   },
   {
     slug: "bissell-little-green",
@@ -162,6 +162,6 @@ export const floorProducts: Product[] = [
     ],
     related: ["shark-navigator-lift-away", "eufy-omni-c28"],
     sources:
-      "This is a category note on the long-selling Little Green portable cleaner and the smaller Mini. Tank sizes and included tools change by model and should be read on the listing. Northline did not lab-test extraction.",
+      "This is a category note on the long-selling Little Green portable cleaner and the smaller Mini. Tank sizes and included tools change by model and should be read on the listing. Guidevale did not lab-test extraction.",
   },
 ];

@@ -54,7 +54,7 @@ export const careProducts: Product[] = [
     ],
     related: ["waterpik-aquarius", "chi-original-flat-iron"],
     sources:
-      "Stroke rate, pressure behavior, materials, battery, and travel-case features follow SURI's published specs as reported in Tom's Guide's electric toothbrush coverage in November 2026. Northline did not run a clinical study. This is not dental advice.",
+      "Stroke rate, pressure behavior, materials, battery, and travel-case features follow SURI's published specs as reported in Tom's Guide's electric toothbrush coverage in November 2026. Guidevale did not run a clinical study. This is not dental advice.",
   },
   {
     slug: "chi-original-flat-iron",
@@ -108,7 +108,7 @@ export const careProducts: Product[] = [
     ],
     related: ["suri-toothbrush", "waterpik-aquarius"],
     sources:
-      "This is a buying note on the long-sold CHI Original 1-inch ceramic iron and the way it is used. Plate width and heat behavior are the product's well-known design. Northline did not instrument plate temperature.",
+      "This is a buying note on the long-sold CHI Original 1-inch ceramic iron and the way it is used. Plate width and heat behavior are the product's well-known design. Guidevale did not instrument plate temperature.",
   },
   {
     slug: "waterpik-aquarius",
@@ -162,6 +162,6 @@ export const careProducts: Product[] = [
     ],
     related: ["suri-toothbrush", "chi-original-flat-iron"],
     sources:
-      "This note describes the Waterpik Aquarius countertop water flosser, the long-selling reservoir model. Tip names and pressure settings should be confirmed on the current listing. Northline did not run a clinical comparison against string floss. This is not dental advice.",
+      "This note describes the Waterpik Aquarius countertop water flosser, the long-selling reservoir model. Tip names and pressure settings should be confirmed on the current listing. Guidevale did not run a clinical comparison against string floss. This is not dental advice.",
   },
 ];

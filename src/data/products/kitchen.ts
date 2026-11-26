@@ -53,7 +53,7 @@ export const kitchenProducts: Product[] = [
     ],
     related: ["lodge-12-skillet", "kitchenaid-artisan"],
     sources:
-      "Function list and 5-quart capacity describe the Ninja Air Fryer Pro 4-in-1 as covered in November 2026 deal reporting. Ninja sells many similarly named fryers. Confirm capacity and functions on the listing you open. Northline did not run a cook-off.",
+      "Function list and 5-quart capacity describe the Ninja Air Fryer Pro 4-in-1 as covered in November 2026 deal reporting. Ninja sells many similarly named fryers. Confirm capacity and functions on the listing you open. Guidevale did not run a cook-off.",
   },
   {
     slug: "lodge-12-skillet",
@@ -107,7 +107,7 @@ export const kitchenProducts: Product[] = [
     ],
     related: ["ninja-air-fryer-pro", "kitchenaid-artisan"],
     sources:
-      "This note is about Lodge's standard pre-seasoned skillet, a product the company has sold in the same form for years. Handle design and exact weight vary by diameter. Northline did not send this pan to a lab.",
+      "This note is about Lodge's standard pre-seasoned skillet, a product the company has sold in the same form for years. Handle design and exact weight vary by diameter. Guidevale did not send this pan to a lab.",
   },
   {
     slug: "kitchenaid-artisan",
@@ -161,6 +161,6 @@ export const kitchenProducts: Product[] = [
     ],
     related: ["lodge-12-skillet", "ninja-air-fryer-pro"],
     sources:
-      "This note describes the long-running Artisan tilt-head with a 5-quart bowl. Wattage and included beaters vary by year and bundle. Confirm both on the listing. Northline did not durability-test a mixer.",
+      "This note describes the long-running Artisan tilt-head with a 5-quart bowl. Wattage and included beaters vary by year and bundle. Confirm both on the listing. Guidevale did not durability-test a mixer.",
   },
 ];

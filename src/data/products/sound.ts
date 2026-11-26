@@ -53,7 +53,7 @@ export const soundProducts: Product[] = [
     ],
     related: ["bose-quietcomfort", "sony-wh-1000xm6"],
     sources:
-      "Battery life, USB-C lossless playback, and the acoustic description follow Beats' published Studio Pro materials and the current Amazon product listing. Northline did not measure frequency response.",
+      "Battery life, USB-C lossless playback, and the acoustic description follow Beats' published Studio Pro materials and the current Amazon product listing. Guidevale did not measure frequency response.",
   },
   {
     slug: "bose-quietcomfort",
@@ -107,7 +107,7 @@ export const soundProducts: Product[] = [
     ],
     related: ["beats-studio-pro", "sony-wh-1000xm6"],
     sources:
-      "This note is about Bose's QuietComfort over-ear line, and specifically flags the 2nd-gen model that retail coverage was discounting in November 2026. Comfort and tuning descriptions match the line's long-published design, not a Northline measurement. Confirm the generation on the listing.",
+      "This note is about Bose's QuietComfort over-ear line, and specifically flags the 2nd-gen model that retail coverage was discounting in November 2026. Comfort and tuning descriptions match the line's long-published design, not a Guidevale measurement. Confirm the generation on the listing.",
   },
   {
     slug: "sony-wh-1000xm6",
@@ -161,6 +161,6 @@ export const soundProducts: Product[] = [
     ],
     related: ["bose-quietcomfort", "beats-studio-pro"],
     sources:
-      "The XM6 is Sony's current WH-1000X over-ear as covered in November 2026 retail reporting. This page does not restate a battery figure, because those lines should be read on the listing you are buying. Northline did not measure the XM6 against the XM5.",
+      "The XM6 is Sony's current WH-1000X over-ear as covered in November 2026 retail reporting. This page does not restate a battery figure, because those lines should be read on the listing you are buying. Guidevale did not measure the XM6 against the XM5.",
   },
 ];

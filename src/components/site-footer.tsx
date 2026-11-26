@@ -7,13 +7,13 @@ export function SiteFooter() {
     <footer className="mt-16 border-t border-border bg-[#ebe3d6]">
       <div className="mx-auto grid max-w-5xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-heading text-2xl">Northline</p>
+          <p className="font-heading text-2xl">Guidevale</p>
           <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">
             A short list of products people keep buying, and the reason each
             one earns a click. Today&apos;s price stays on Amazon.
           </p>
           <p className="mt-4 max-w-sm rounded-2xl border border-border bg-card p-4 text-sm leading-6">
-            {associateDisclosure} Northline is not endorsed or sponsored by
+            {associateDisclosure} Guidevale is not endorsed or sponsored by
             Amazon. Amazon and the Amazon logo are trademarks of Amazon.com,
             Inc. or its affiliates.
           </p>

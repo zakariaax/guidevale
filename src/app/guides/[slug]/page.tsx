@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: guide.description,
     alternates: siteOrigin() ? { canonical: `/guides/${guide.slug}` } : undefined,
     openGraph: {
-      title: `${guide.title} · Northline`,
+      title: `${guide.title} · Guidevale`,
       description: guide.description,
       type: "article",
     },
@@ -46,8 +46,8 @@ export default async function GuidePage({ params }: Props) {
             description: guide.description,
             dateModified: guide.updated,
             datePublished: guide.updated,
-            author: { "@type": "Organization", name: "Northline" },
-            publisher: { "@type": "Organization", name: "Northline" },
+            author: { "@type": "Organization", name: "Guidevale" },
+            publisher: { "@type": "Organization", name: "Guidevale" },
             mainEntityOfPage: abs(`/guides/${guide.slug}`),
           },
           {
@@ -63,7 +63,7 @@ export default async function GuidePage({ params }: Props) {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Northline", item: abs("/") },
+              { "@type": "ListItem", position: 1, name: "Guidevale", item: abs("/") },
               { "@type": "ListItem", position: 2, name: "Guides", item: abs("/guides") },
               {
                 "@type": "ListItem",

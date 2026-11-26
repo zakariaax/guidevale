@@ -21,7 +21,7 @@ export default function HomePage() {
         data={{
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "On the Northline desk",
+          name: "On the Guidevale desk",
           itemListElement: [hero, ...spots].map((product, index) => ({
             "@type": "ListItem",
             position: index + 1,
@@ -37,7 +37,7 @@ export default function HomePage() {
         The short list of products people keep buying.
       </h1>
       <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
-        Northline names the product, who it is for, and the catch. Amazon
+        Guidevale names the product, who it is for, and the catch. Amazon
         names today&apos;s price. Open a note before you open a cart.
       </p>
 

@@ -33,7 +33,7 @@ export const airProducts: Product[] = [
     watchouts: [
       "Auto mode and Wi-Fi are conveniences. They do not change the CADR. Sleep mode and a lower fan still move less air.",
       "Budget the replacement filter when you buy the machine, not a year from now when the light comes on.",
-      "Northline has not run a particle counter on this unit. The CADR and room figures come from Winix's AHAM-verified ratings as published in the manual and retailer spec sheets.",
+      "Guidevale has not run a particle counter on this unit. The CADR and room figures come from Winix's AHAM-verified ratings as published in the manual and retailer spec sheets.",
     ],
     specs: [
       { label: "AHAM room", value: "392 sq ft at 4.8 air changes/hour" },
@@ -55,7 +55,7 @@ export const airProducts: Product[] = [
     ],
     related: ["coway-mighty-ap-1512hh", "levoit-core-300-p"],
     sources:
-      "CADR, room size, power, and dimensions are Winix's published figures for the 5530, including AHAM Verifide ratings repeated in retailer spec sheets and the user manual. Sales rank is from public bestseller roundups current as of November 22, 2026. Northline did not test this unit in a lab.",
+      "CADR, room size, power, and dimensions are Winix's published figures for the 5530, including AHAM Verifide ratings repeated in retailer spec sheets and the user manual. Sales rank is from public bestseller roundups current as of November 22, 2026. Guidevale did not test this unit in a lab.",
   },
   {
     slug: "coway-mighty-ap-1512hh",
@@ -111,7 +111,7 @@ export const airProducts: Product[] = [
     ],
     related: ["winix-5530", "levoit-core-300-p"],
     sources:
-      "Room size, CADR, noise, power, and dimensions are Coway's published ratings for the AP-1512HH as compiled by comparison desks from the manufacturer. Filter intervals are the maker's guidance and should be checked against the manual in the box. Northline did not test this unit.",
+      "Room size, CADR, noise, power, and dimensions are Coway's published ratings for the AP-1512HH as compiled by comparison desks from the manufacturer. Filter intervals are the maker's guidance and should be checked against the manual in the box. Guidevale did not test this unit.",
   },
   {
     slug: "levoit-core-300-p",
@@ -167,6 +167,6 @@ export const airProducts: Product[] = [
     ],
     related: ["coway-mighty-ap-1512hh", "winix-5530"],
     sources:
-      "CADR, power, noise, room size, and dimensions are taken from Levoit's Core 300-P user manual and from the maker's published air-change figures. Northline did not test this unit.",
+      "CADR, power, noise, room size, and dimensions are taken from Levoit's Core 300-P user manual and from the maker's published air-change figures. Guidevale did not test this unit.",
   },
 ];

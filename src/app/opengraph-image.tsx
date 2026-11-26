@@ -32,9 +32,9 @@ export default function OpenGraphImage() {
               fontSize: 32,
             }}
           >
-            N
+            G
           </div>
-          <div style={{ fontSize: 36, letterSpacing: -1 }}>Northline</div>
+          <div style={{ fontSize: 36, letterSpacing: -1 }}>Guidevale</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           <div style={{ fontSize: 68, lineHeight: 1.02, letterSpacing: -2, maxWidth: 900 }}>

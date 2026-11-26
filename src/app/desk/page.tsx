@@ -7,7 +7,7 @@ import { productsIn } from "@/lib/catalog";
 export const metadata: Metadata = {
   title: "The desk",
   description:
-    "Every product Northline is willing to send you to Amazon for, grouped by the job it does.",
+    "Every product Guidevale is willing to send you to Amazon for, grouped by the job it does.",
   alternates: process.env.SITE_URL ? { canonical: "/desk" } : undefined,
 };
 

@@ -53,7 +53,7 @@ export const homeProducts: Product[] = [
     ],
     related: ["blink-outdoor-4", "eufy-doorbell-e340"],
     sources:
-      "Sales position from public speaker bestseller roundups as of November 22, 2026. The note about Echo price increases follows contemporaneous retail reporting. Northline did not benchmark speaker quality.",
+      "Sales position from public speaker bestseller roundups as of November 22, 2026. The note about Echo price increases follows contemporaneous retail reporting. Guidevale did not benchmark speaker quality.",
   },
   {
     slug: "blink-outdoor-4",
@@ -70,7 +70,7 @@ export const homeProducts: Product[] = [
     dek: "Weatherproof, battery-powered, with person detection and a wider view than the Outdoor before it. Read the current Blink plan before you buy a second one.",
     why: [
       "The Outdoor 4 is the camera people recommend when they want a view of a gate or a porch without running a wire. Review notes that have held up: it is small, it runs on AA batteries, setup is ordinary, the field of view is wider than the previous Outdoor, and person detection is the feature that makes the notifications usable. None of that is a security system. It is a camera that wakes up.",
-      "Blink's plans are the product you are also buying. What you can see live, what is stored, and which alerts exist without a subscription have changed before and will change again. Northline will not print a plan price that expires. Open Blink's current plan page, and open the listing, and see what a single camera does the day you don't subscribe. Then decide.",
+      "Blink's plans are the product you are also buying. What you can see live, what is stored, and which alerts exist without a subscription have changed before and will change again. Guidevale will not print a plan price that expires. Open Blink's current plan page, and open the listing, and see what a single camera does the day you don't subscribe. Then decide.",
       "Many Outdoor kits still expect a Sync Module somewhere in the house. Confirm that on the kit in the cart. A camera advertised alone and a camera that needs a hub are different errands.",
       "If the job is a door and a package, the [E340 doorbell](/products/eufy-doorbell-e340) is the more direct tool. If the job is a voice in the kitchen, it is the [Dot](/products/echo-dot-5), and it should not be in the same decision. The questions to ask of all three are in [The subscription question](/guides/smart-home-subscriptions).",
     ],
@@ -107,7 +107,7 @@ export const homeProducts: Product[] = [
     ],
     related: ["eufy-doorbell-e340", "echo-dot-5"],
     sources:
-      "Hardware notes (battery, weatherproofing, person detection, wider field of view) follow published Outdoor 4 reviews, including November 2026 retail coverage. Subscription terms are deliberately not quoted because Blink changes them. Northline did not install this camera.",
+      "Hardware notes (battery, weatherproofing, person detection, wider field of view) follow published Outdoor 4 reviews, including November 2026 retail coverage. Subscription terms are deliberately not quoted because Blink changes them. Guidevale did not install this camera.",
   },
   {
     slug: "eufy-doorbell-e340",
@@ -161,6 +161,6 @@ export const homeProducts: Product[] = [
     ],
     related: ["blink-outdoor-4", "echo-dot-5"],
     sources:
-      "Sales position from public doorbell roundups as of November 22, 2026. The dual-camera package view is the E340's advertised design. Storage and power options change by kit and should be read on the listing. Northline did not install this doorbell.",
+      "Sales position from public doorbell roundups as of November 22, 2026. The dual-camera package view is the E340's advertised design. Storage and power options change by kit and should be read on the listing. Guidevale did not install this doorbell.",
   },
 ];

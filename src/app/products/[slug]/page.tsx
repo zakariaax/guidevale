@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? { canonical: `/products/${product.slug}` }
       : undefined,
     openGraph: {
-      title: `${product.name} · Northline`,
+      title: `${product.name} · Guidevale`,
       description: product.verdict,
     },
   };
@@ -49,7 +49,7 @@ export default async function ProductPage({ params }: Props) {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Northline", item: abs("/") },
+              { "@type": "ListItem", position: 1, name: "Guidevale", item: abs("/") },
               {
                 "@type": "ListItem",
                 position: 2,

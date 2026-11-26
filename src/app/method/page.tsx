@@ -5,7 +5,7 @@ import { siteOrigin } from "@/lib/site";
 export const metadata: Metadata = {
   title: "How a product gets on the desk",
   description:
-    "Northline is an editorial desk, not a lab and not a price tracker. This is how a product earns a page, and what we leave off on purpose.",
+    "Guidevale is an editorial desk, not a lab and not a price tracker. This is how a product earns a page, and what we leave off on purpose.",
   alternates: siteOrigin() ? { canonical: "/method" } : undefined,
 };
 
@@ -18,7 +18,7 @@ export default function MethodPage() {
       </h1>
       <div className="mt-6 space-y-5 text-[1.05rem] leading-8">
         <p>
-          Northline is an editorial desk. A product earns a page when people
+          Guidevale is an editorial desk. A product earns a page when people
           keep buying it, when a specific person can be named as the right
           owner, and when we can say who should leave it on the shelf. A
           viral coupon with no job behind it does not earn a page.
@@ -67,7 +67,7 @@ export default function MethodPage() {
           model changes.
         </p>
         <p>
-          Northline participates in the Amazon Services LLC Associates Program.
+          Guidevale participates in the Amazon Services LLC Associates Program.
           The required sentence is on every page, and the full note is on the{" "}
           <Link href="/disclosure" className="font-medium text-signal-deep underline">
             disclosure

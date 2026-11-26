@@ -25,7 +25,7 @@ export function SiteHeader() {
           <Link href="/" className="flex items-center gap-2.5">
             <Mark />
             <span className="font-heading text-[1.7rem] leading-none tracking-tight">
-              Northline
+              Guidevale
             </span>
           </Link>
           <form action="/search" className="ml-auto hidden w-full max-w-xs md:block">
@@ -97,13 +97,14 @@ function Mark() {
     <svg viewBox="0 0 32 32" className="size-8" aria-hidden>
       <rect width="32" height="32" rx="8" fill="#c2410c" />
       <path
-        d="M16 6v20M16 6l6 7M16 6l-6 7"
+        d="M8 12l8 12 8-12"
         fill="none"
         stroke="#fffaf6"
-        strokeWidth="2.2"
+        strokeWidth="2.4"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+      <circle cx="16" cy="8" r="2.2" fill="#fffaf6" />
     </svg>
   );
 }

@@ -9,7 +9,7 @@ export const categories: Category[] = [
     lede: "Three machines that keep showing up in real rooms, sized by the certified number rather than the one painted on the box.",
     body: [
       "An air purifier is a fan and a filter with a marketing department. The number that should decide the purchase is the AHAM suggested room size, built around several air changes an hour, not the much larger figure that assumes the air is turned over once.",
-      "Northline keeps three models on the shelf because they cover the actual decision: a large bedroom or modest living room with a sensor and an app, a medium room that can run itself, and a small bedroom that should stay quiet. A bigger open plan needs a bigger CADR than any of these, and we say so on the pages.",
+      "Guidevale keeps three models on the shelf because they cover the actual decision: a large bedroom or modest living room with a sensor and an app, a medium room that can run itself, and a small bedroom that should stay quiet. A bigger open plan needs a bigger CADR than any of these, and we say so on the pages.",
       "Filters are the second price. A unit that looks friendly on day one and then asks for an expensive annual cartridge is a different purchase from the one in the cart. Each note below says what gets replaced.",
     ],
   },
@@ -32,7 +32,7 @@ export const categories: Category[] = [
     plate: "skillet",
     lede: "Counter space is the expensive part. These three earn the spot, or they don't belong in the kitchen.",
     body: [
-      "A kitchen fills up with appliances that were exciting for a month. The test Northline uses is dull on purpose: will this still be in the way, in a good way, on a Wednesday in March?",
+      "A kitchen fills up with appliances that were exciting for a month. The test Guidevale uses is dull on purpose: will this still be in the way, in a good way, on a Wednesday in March?",
       "The air fryer is for people who actually cook on weeknights and want crisp food without heating the whole oven. The skillet is the pan you buy once and then maintain. The mixer is for people who bake, not for people who like the way a mixer looks in a photograph.",
       "If you bake twice a year, skip the mixer and keep the skillet. If you never fry, roast, or reheat, the air fryer is a breadbox with a plug.",
     ],
@@ -68,7 +68,7 @@ export const categories: Category[] = [
     plate: "care",
     lede: "The personal tools people replace on a schedule, or keep until the cord gives out.",
     body: [
-      "Care is where a deal site usually pastes a wall of serums. Northline doesn't. The products that keep selling here are the ones with a job: clean teeth, press hair, flush the gumline your brush misses.",
+      "Care is where a deal site usually pastes a wall of serums. Guidevale doesn't. The products that keep selling here are the ones with a job: clean teeth, press hair, flush the gumline your brush misses.",
       "Each of these has a second cost. Brush heads, a heat protectant you should already own, and flosser tips. The page says so before the button.",
       "None of this is a medical treatment. A toothbrush and a water flosser sit next to a dentist, not instead of one. A flat iron that runs hot is a tool for healthy enough hair, not a repair kit for hair that is already breaking.",
     ],

@@ -11,7 +11,7 @@ export const guides: Guide[] = [
     minutes: 8,
     faqs: [
       {
-        q: "Why doesn't Northline print the price?",
+        q: "Why doesn't Guidevale print the price?",
         a: "Amazon's associate rules allow a product price on a site like this only when it comes from Amazon's own API and is refreshed on a short clock, with the time shown. A price we typed would be wrong the next time Amazon's algorithm moved, and it would put an Associates account at risk. The button opens today's price. That is the only number we want you to use.",
       },
       {
@@ -47,7 +47,7 @@ export const guides: Guide[] = [
       {
         type: "callout",
         title: "The only price that counts",
-        text: "Northline links you to Amazon and lets Amazon show the price. If a number on some other site and the number on Amazon disagree, Amazon is the one about to charge your card.",
+        text: "Guidevale links you to Amazon and lets Amazon show the price. If a number on some other site and the number on Amazon disagree, Amazon is the one about to charge your card.",
       },
       {
         type: "h2",
@@ -119,7 +119,7 @@ export const guides: Guide[] = [
       {
         type: "table",
         caption:
-          "Published manufacturer figures, not a Northline lab test. Marketing square footage is intentionally left off.",
+          "Published manufacturer figures, not a Guidevale lab test. Marketing square footage is intentionally left off.",
         headers: ["", "Levoit Core 300-P", "Coway Mighty", "Winix 5530"],
         rows: [
           ["Certified room", "222 sq ft", "361 sq ft", "392 sq ft"],
@@ -320,7 +320,7 @@ export const guides: Guide[] = [
     blocks: [
       {
         type: "p",
-        text: "The kitchen tools that disappoint are rarely bad at the task on the box. They are bad at living in the room. A single-purpose machine that has to be hauled off a high shelf will lose to a worse tool that was already on the counter. Northline's kitchen shelf is three objects, and the test for each is a Wednesday in March.",
+        text: "The kitchen tools that disappoint are rarely bad at the task on the box. They are bad at living in the room. A single-purpose machine that has to be hauled off a high shelf will lose to a worse tool that was already on the counter. Guidevale's kitchen shelf is three objects, and the test for each is a Wednesday in March.",
       },
       {
         type: "h2",
@@ -378,7 +378,7 @@ export const guides: Guide[] = [
     blocks: [
       {
         type: "p",
-        text: "Smart-home deals are priced like the interesting object is the plastic. Often the interesting object is the plan that starts the month after the return window, or the hub that was not in the photo, or a hole in a wall you don't own. Northline's home shelf is three devices and a set of questions. The questions are the guide.",
+        text: "Smart-home deals are priced like the interesting object is the plastic. Often the interesting object is the plan that starts the month after the return window, or the hub that was not in the photo, or a hole in a wall you don't own. Guidevale's home shelf is three devices and a set of questions. The questions are the guide.",
       },
       {
         type: "h2",

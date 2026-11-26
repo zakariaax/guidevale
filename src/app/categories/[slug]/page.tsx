@@ -41,7 +41,7 @@ export default async function CategoryPage({ params }: Props) {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Northline", item: abs("/") },
+              { "@type": "ListItem", position: 1, name: "Guidevale", item: abs("/") },
               {
                 "@type": "ListItem",
                 position: 2,

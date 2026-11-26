@@ -7,7 +7,7 @@ import { searchDesk } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "Search",
-  description: "Search the Northline desk.",
+  description: "Search the Guidevale desk.",
   robots: { index: false, follow: true },
 };
 

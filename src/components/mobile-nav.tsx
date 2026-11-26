@@ -33,7 +33,7 @@ export function MobileNav({
       </SheetTrigger>
       <SheetContent side="left" className="bg-paper">
         <SheetHeader>
-          <SheetTitle className="font-heading text-2xl">Northline</SheetTitle>
+          <SheetTitle className="font-heading text-2xl">Guidevale</SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-1 px-4">
           {links.map((link) => (

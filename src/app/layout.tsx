@@ -26,22 +26,22 @@ const origin = siteOrigin();
 export const metadata: Metadata = {
   metadataBase: origin ? new URL(origin) : undefined,
   title: {
-    default: "Northline — products worth opening",
-    template: "%s · Northline",
+    default: "Guidevale — products worth opening",
+    template: "%s · Guidevale",
   },
   description:
-    "Northline is a short list of products people keep buying. We publish who each one is for. Amazon publishes today's price.",
-  applicationName: "Northline",
+    "Guidevale is a short list of products people keep buying. We publish who each one is for. Amazon publishes today's price.",
+  applicationName: "Guidevale",
   openGraph: {
     type: "website",
-    siteName: "Northline",
-    title: "Northline — products worth opening",
+    siteName: "Guidevale",
+    title: "Guidevale — products worth opening",
     description:
       "A deal desk that names the product and the reason. The live price stays on Amazon.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Northline — products worth opening",
+    title: "Guidevale — products worth opening",
     description:
       "A deal desk that names the product and the reason. The live price stays on Amazon.",
   },
@@ -60,7 +60,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           data={{
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "Northline",
+            name: "Guidevale",
             url: origin || undefined,
             description:
               "Editorial product desk for things people keep buying. Prices are shown on Amazon.",
