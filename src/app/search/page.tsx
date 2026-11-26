@@ -46,7 +46,10 @@ async function Results({
       </p>
     );
   }
-  const empty = result.products.length === 0 && result.guides.length === 0;
+  const empty =
+    result.products.length === 0 &&
+    result.guides.length === 0 &&
+    result.comparisons.length === 0;
   return (
     <div className="mt-8">
       <p className="text-sm text-muted-foreground">
@@ -65,6 +68,18 @@ async function Results({
         <ul className="mt-4">
           {result.products.map((product) => (
             <ProductRow key={product.slug} product={product} />
+          ))}
+        </ul>
+      ) : null}
+      {result.comparisons.length ? (
+        <ul className="mt-6 space-y-3">
+          {result.comparisons.map((comparison) => (
+            <li key={comparison.slug}>
+              <Link href={`/compare/${comparison.slug}`} className="font-medium hover:underline">
+                {comparison.title}
+              </Link>
+              <p className="text-sm text-muted-foreground">{comparison.dek}</p>
+            </li>
           ))}
         </ul>
       ) : null}

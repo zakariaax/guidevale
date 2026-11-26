@@ -7,6 +7,7 @@ import { associateDisclosure, associateState } from "@/lib/site";
 const links = [
   { href: "/desk", label: "The desk" },
   { href: "/guides", label: "Guides" },
+  { href: "/compare", label: "Compare" },
   { href: "/method", label: "Method" },
   ...categories.map((category) => ({
     href: `/categories/${category.slug}`,
@@ -45,6 +46,9 @@ export function SiteHeader() {
             </Link>
             <Link href="/guides" className="hover:underline">
               Guides
+            </Link>
+            <Link href="/compare" className="hover:underline">
+              Compare
             </Link>
             <Link href="/method" className="hover:underline">
               Method

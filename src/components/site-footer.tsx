@@ -51,6 +51,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link href="/compare" className="hover:underline">
+                Head-to-head comparisons
+              </Link>
+            </li>
+            <li>
               <Link href="/method" className="hover:underline">
                 How a product gets here
               </Link>

@@ -9,7 +9,13 @@ import { ProductImage } from "@/components/product-image";
 import { ProductRow } from "@/components/product-row";
 import { RichText } from "@/components/rich-text";
 import { products } from "@/data/products";
-import { getCategory, getProduct, guideForCategory, relatedProducts } from "@/lib/catalog";
+import {
+  comparisonsFor,
+  getCategory,
+  getProduct,
+  guideForCategory,
+  relatedProducts,
+} from "@/lib/catalog";
 import { abs, formatDeskDate, siteOrigin } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -42,6 +48,7 @@ export default async function ProductPage({ params }: Props) {
   const category = getCategory(product.category);
   const related = relatedProducts(product.related);
   const guide = guideForCategory(product.category);
+  const versus = comparisonsFor(product.slug);
 
   return (
     <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
@@ -120,6 +127,29 @@ export default async function ProductPage({ params }: Props) {
           <div className="mt-6">
             <AmazonButton query={product.searchQuery} />
           </div>
+          {versus.map((comparison) => {
+            const other = getProduct(
+              comparison.products.find((slug) => slug !== product.slug) ?? "",
+            );
+            return (
+              <Link
+                key={comparison.slug}
+                href={`/compare/${comparison.slug}`}
+                className="group mt-5 flex max-w-xl items-center gap-3 rounded-2xl border border-border bg-card px-4 py-3 transition hover:border-signal/40"
+              >
+                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-ink text-[11px] font-bold tracking-[0.12em] text-[#f6f1e8]">
+                  VS
+                </span>
+                <span className="text-sm leading-6">
+                  <span className="block text-muted-foreground">Deciding between these?</span>
+                  <span className="font-medium group-hover:underline">
+                    {product.name} vs {other?.name}
+                  </span>
+                </span>
+                <span aria-hidden className="ml-auto text-signal-deep">→</span>
+              </Link>
+            );
+          })}
         </div>
       </div>
 

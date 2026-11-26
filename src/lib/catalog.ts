@@ -1,7 +1,16 @@
 import { categories } from "@/data/categories";
+import { comparisons } from "@/data/comparisons";
 import { guides } from "@/data/guides";
 import { products } from "@/data/products";
-import type { Guide, Product } from "@/data/types";
+import type { Comparison, Guide, Product } from "@/data/types";
+
+export function getComparison(slug: string) {
+  return comparisons.find((comparison) => comparison.slug === slug);
+}
+
+export function comparisonsFor(productSlug: string) {
+  return comparisons.filter((comparison) => comparison.products.includes(productSlug));
+}
 
 export function getCategory(slug: string) {
   return categories.find((category) => category.slug === slug);
@@ -56,7 +65,7 @@ export function searchDesk(raw: string) {
   const q = raw.trim().slice(0, 80);
   const words = q.toLowerCase().split(/\s+/).filter(Boolean);
   if (!words.length) {
-    return { q, products: [] as Product[], guides: [] as Guide[] };
+    return { q, products: [] as Product[], guides: [] as Guide[], comparisons: [] as Comparison[] };
   }
   const matches = (parts: string[]) => {
     const hay = parts.join(" ").toLowerCase();
@@ -77,6 +86,9 @@ export function searchDesk(raw: string) {
     ),
     guides: guides.filter((guide) =>
       matches([guide.title, guide.dek, guide.description]),
+    ),
+    comparisons: comparisons.filter((comparison) =>
+      matches([comparison.title, comparison.dek, comparison.description]),
     ),
   };
 }

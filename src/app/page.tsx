@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AmazonButton } from "@/components/amazon-button";
+import { ComparisonCard } from "@/components/comparison-card";
 import { DealCard, tierLabel } from "@/components/deal-card";
 import { DeskFeed, type FeedTab } from "@/components/desk-feed";
 import { EventBanner } from "@/components/event-banner";
@@ -8,6 +9,7 @@ import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
 import { ProductImage } from "@/components/product-image";
 import { categories } from "@/data/categories";
+import { comparisons } from "@/data/comparisons";
 import { guides } from "@/data/guides";
 import { categoryImageProduct } from "@/data/product-images";
 import { products } from "@/data/products";
@@ -274,6 +276,30 @@ export default function HomePage() {
           </section>
         </aside>
       </div>
+
+      <section className="mt-14" aria-labelledby="compare-heading">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 id="compare-heading" className="font-heading text-3xl tracking-tight sm:text-4xl">
+              Stuck between two?
+            </h2>
+            <p className="mt-2 max-w-2xl text-muted-foreground">
+              The pairs people go back and forth on, side by side, ending with
+              who should buy which.
+            </p>
+          </div>
+          <Link href="/compare" className="hidden text-sm font-medium text-signal-deep hover:underline sm:inline">
+            All comparisons
+          </Link>
+        </div>
+        <ul className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {comparisons.map((comparison) => (
+            <li key={comparison.slug}>
+              <ComparisonCard comparison={comparison} />
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section className="mt-14" aria-labelledby="guides-heading">
         <div className="flex items-end justify-between gap-4">
