@@ -48,7 +48,7 @@ This repo is the engine for that, on purpose:
 - Internal links between the products that compete with each other
 - Article, FAQ, breadcrumb, and item-list structured data, and no fake star ratings
 - A sitemap and `robots.txt` once `SITE_URL` is set
-- No tracker script, so the pages stay fast
+- Google Analytics 4 (`G-H0LZGJ9W17`) loads after the page, so a visit is counted without blocking the first paint
 - Copy that says where a spec came from, because "we tested this in our lab" is a lie here and Google's quality raters can tell
 
 What you still do, in order:
