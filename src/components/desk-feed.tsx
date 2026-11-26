@@ -59,7 +59,7 @@ export function DeskFeed({
               )}
             >
               {t.label}
-              <span className={cn("ml-1.5 text-xs", tab === t.id ? "text-white/60" : "text-ink/40")}>
+              <span className={cn("ml-1.5 text-xs", tab === t.id ? "text-white/75" : "text-muted-foreground")}>
                 {counts[t.id]?.all ?? 0}
               </span>
             </button>
@@ -83,11 +83,11 @@ export function DeskFeed({
                   active
                     ? "border-signal bg-signal text-white"
                     : "border-border bg-paper text-ink/80 hover:border-signal/50",
-                  !active && n === 0 && "opacity-45",
+                  !active && n === 0 && "border-dashed text-muted-foreground",
                 )}
               >
                 {r.name}
-                <span className={cn("ml-1 text-xs", active ? "text-white/75" : "text-ink/45")}>{n}</span>
+                <span className={cn("ml-1 text-xs", active ? "text-white" : "text-muted-foreground")}>{n}</span>
               </button>
             );
           })}
