@@ -75,14 +75,6 @@ export default async function ProductPage({ params }: Props) {
           },
           {
             "@context": "https://schema.org",
-            "@type": "Product",
-            name: product.name,
-            brand: { "@type": "Brand", name: product.brand },
-            description: product.verdict,
-            category: category?.name,
-          },
-          {
-            "@context": "https://schema.org",
             "@type": "FAQPage",
             mainEntity: product.faqs.map((faq) => ({
               "@type": "Question",

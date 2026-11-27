@@ -59,12 +59,7 @@ export default async function ComparisonPage({ params }: Props) {
             author: { "@type": "Organization", name: "Guidevale" },
             publisher: { "@type": "Organization", name: "Guidevale" },
             mainEntityOfPage: abs(path),
-            about: pair.map((product) => ({
-              "@type": "Product",
-              name: product.name,
-              brand: { "@type": "Brand", name: product.brand },
-              url: abs(`/products/${product.slug}`),
-            })),
+            about: pair.map((product) => product.name),
           },
           {
             "@context": "https://schema.org",
